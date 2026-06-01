@@ -1,0 +1,31 @@
+[debug] [2023-07-31T07:49:27.342Z] ----------------------------------------------------------------------
+[debug] [2023-07-31T07:49:27.343Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy --force
+[debug] [2023-07-31T07:49:27.344Z] CLI Version:   11.17.0
+[debug] [2023-07-31T07:49:27.344Z] Platform:      darwin
+[debug] [2023-07-31T07:49:27.344Z] Node Version:  v18.12.0
+[debug] [2023-07-31T07:49:27.345Z] Time:          Mon Jul 31 2023 10:49:27 GMT+0300 (Eastern European Summer Time)
+[debug] [2023-07-31T07:49:27.345Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-07-31T07:49:27.397Z] Object ".hosting" in "firebase.json" has unknown property: {"additionalProperty":"frameworksBackend"}
+[debug] [2023-07-31T07:49:27.398Z] Field ".hosting" in "firebase.json" is possibly invalid: should be array
+[debug] [2023-07-31T07:49:27.398Z] Field ".hosting" in "firebase.json" is possibly invalid: should match some schema in anyOf
+[debug] [2023-07-31T07:49:27.401Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-07-31T07:49:27.401Z] > authorizing via signed-in user (psychology.to.go.2019@gmail.com)
+[debug] [2023-07-31T07:49:27.402Z] [iam] checking project chess-experiment-23797 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-07-31T07:49:27.403Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/chess-experiment-23797:testIamPermissions [none]
+[debug] [2023-07-31T07:49:27.403Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/chess-experiment-23797:testIamPermissions x-goog-quota-user=projects/chess-experiment-23797
+[debug] [2023-07-31T07:49:27.404Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/chess-experiment-23797:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-07-31T07:49:28.384Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/chess-experiment-23797:testIamPermissions 200
+[debug] [2023-07-31T07:49:28.384Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/chess-experiment-23797:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-07-31T07:49:28.385Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/chess-experiment-23797 [none]
+[debug] [2023-07-31T07:49:28.751Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/chess-experiment-23797 200
+[debug] [2023-07-31T07:49:28.751Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/chess-experiment-23797 {"projectId":"chess-experiment-23797","projectNumber":"1050409862908","displayName":"Chess Experiment","name":"projects/chess-experiment-23797","resources":{"hostingSite":"chess-experiment-23797"},"state":"ACTIVE","etag":"1_e304150b-8d4b-4f18-8ebc-a120ff0d7d50"}
+[debug] [2023-07-31T07:49:29.883Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/chess-experiment-23797/sites pageToken=&pageSize=10
+[debug] [2023-07-31T07:49:31.104Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/chess-experiment-23797/sites 200
+[debug] [2023-07-31T07:49:31.104Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/chess-experiment-23797/sites {"sites":[{"name":"projects/chess-experiment-23797/sites/chess-experiment-23797","defaultUrl":"https://chess-experiment-23797.web.app","appId":"1:1050409862908:web:da6606a32325f4ea89f979","type":"DEFAULT_SITE"}]}
+[debug] [2023-07-31T07:49:31.105Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:1050409862908:web:da6606a32325f4ea89f979/config [none]
+[debug] [2023-07-31T07:49:32.128Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:1050409862908:web:da6606a32325f4ea89f979/config 200
+[debug] [2023-07-31T07:49:32.128Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:1050409862908:web:da6606a32325f4ea89f979/config {"projectId":"chess-experiment-23797","appId":"1:1050409862908:web:da6606a32325f4ea89f979","storageBucket":"chess-experiment-23797.appspot.com","apiKey":"AIzaSyDPagCA5YMt9k3hcts7mfdua2tqrLSAMu8","authDomain":"chess-experiment-23797.firebaseapp.com","messagingSenderId":"1050409862908"}
+[debug] [2023-07-31T07:49:39.853Z] Error: ENOENT: no such file or directory, lstat '/Users/patric/Desktop/chess/Users/patric/Desktop/chess/.svelte-kit/output/server'
+[error] 
+[error] Error: An unexpected error has occurred.

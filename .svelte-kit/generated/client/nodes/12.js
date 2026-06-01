@@ -1,0 +1,1 @@
+export { default as component } from "../../../../src/routes/instruction_break/+page.svelte";

@@ -1,0 +1,28 @@
+{
+	"/": [
+		"src/routes/+page.js"
+	],
+	"/about": [
+		"src/routes/about/+page.js"
+	],
+	"/board_four": [],
+	"/board_one": [],
+	"/board_three": [],
+	"/board_two": [],
+	"/contact": [],
+	"/data_collection": [],
+	"/distractor_task": [],
+	"/exit_survey": [],
+	"/instruction_break": [],
+	"/instructions_one": [],
+	"/instructions_two": [],
+	"/pre_training": [],
+	"/sverdle": [
+		"src/routes/sverdle/+page.server.js"
+	],
+	"/sverdle/how-to-play": [
+		"src/routes/sverdle/how-to-play/+page.js"
+	],
+	"/thank_you": [],
+	"/training": []
+}
